@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Crosier WebView',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -34,9 +34,9 @@ class _WebViewWebPageState extends State<WebViewWebPage> {
         context: context,
         builder: (context) => new AlertDialog(
           title:
-              new Text('Confirmation ', style: TextStyle(color: Colors.purple)),
+              new Text('Confirmação ', style: TextStyle(color: Colors.purple)),
           // Are you sure?
-          content: new Text('Do you want exit app ? '),
+          content: new Text('Sair do aplicativo ?'),
           // Do you want to go back?
           actions: <Widget>[
             new FlatButton(
@@ -46,7 +46,7 @@ class _WebViewWebPageState extends State<WebViewWebPage> {
                   goBack = false;
                 });
               },
-              child: new Text('No'), // No
+              child: new Text('Não'), // No
             ),
             new FlatButton(
               onPressed: () {
@@ -55,7 +55,7 @@ class _WebViewWebPageState extends State<WebViewWebPage> {
                   goBack = true;
                 });
               },
-              child: new Text('Yes'), // Yes
+              child: new Text('Sim'), // Yes
             ),
           ],
         ),
